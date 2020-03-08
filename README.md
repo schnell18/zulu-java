@@ -31,7 +31,7 @@ If you wish to build the docker image from scratch, you may clone this
 repository and choose appropriate sub directory containing Dockerfile
 and run:
 
-    docker build -t zulu-apline-jdk12:1.0 .
+    docker build -t schnell18/zulu-apline-jdk12:1.0 .
 
 [1]: https://www.azul.com/
 [2]: https://hub.docker.com/r/schnell18/zulu-jre/
