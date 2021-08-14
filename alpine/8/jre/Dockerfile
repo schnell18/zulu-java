@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.14
 MAINTAINER Justin Zhang "schnell18@gmail.com"
 
 RUN apk add --no-cache ca-certificates && \
@@ -8,7 +8,7 @@ RUN apk add --no-cache ca-certificates && \
     echo "Asia/Shanghai" > /etc/timezone && \
     apk del tzdata
 
-ARG ZULU_JRE="zulu8.38.0.13-ca-jre8.0.212-linux_musl_x64"
+ARG ZULU_JRE="zulu8.54.0.21-ca-jre8.0.292-linux_musl_x64"
 ARG ZULU_DOWNLOAD_URL="https://cdn.azul.com/zulu/bin/${ZULU_JRE}.tar.gz"
 RUN curl -L --silent ${ZULU_DOWNLOAD_URL} | tar -xzf - -C / && \
     mv /$ZULU_JRE /jre
