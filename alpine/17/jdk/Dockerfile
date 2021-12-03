@@ -18,3 +18,4 @@ RUN apk add --no-cache --update curl bash tzdata && \
   apk del tzdata
 
 ENV PATH $PATH:/jdk/bin
+ENV JAVA_HOME /jdk

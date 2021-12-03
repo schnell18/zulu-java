@@ -10,10 +10,10 @@ case "${dockerArch}" in
 esac
 
 cd jre
-docker build -t schnell18/zulu-java:alpine-jre17-${ARCH}-0.1.0 .
-docker push schnell18/zulu-java:alpine-jre17-${ARCH}-0.1.0
+docker build -t schnell18/zulu-java:alpine-jre17-${ARCH}-0.1.1 .
+docker push schnell18/zulu-java:alpine-jre17-${ARCH}-0.1.1
 cd ..
 cd jdk
-docker build -t schnell18/zulu-java:alpine-jdk17-${ARCH}-0.1.0 .
-docker push schnell18/zulu-java:alpine-jdk17-${ARCH}-0.1.0
+docker build -t schnell18/zulu-java:alpine-jdk17-${ARCH}-0.1.1 .
+docker push schnell18/zulu-java:alpine-jdk17-${ARCH}-0.1.1
 cd ..
